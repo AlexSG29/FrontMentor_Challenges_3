@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .titles-card {
+        @apply text-4xl font-serif
+    }
+    .p-card {
+        @apply text-xl font-sans
+    }
+}
