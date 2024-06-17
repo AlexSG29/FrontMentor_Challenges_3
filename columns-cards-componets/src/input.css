@@ -4,9 +4,12 @@
 
 @layer components {
     .titles-card {
-        @apply text-4xl font-serif
+        @apply text-5xl font-serif font-bold text-white my-10  
     }
     .p-card {
-        @apply text-xl font-sans
+        @apply text-base font-sans text-Transparent-White mb-16
+    }
+    .button-more {
+        @apply rounded-full bg-white w-40 p-3 mt-10
     }
 }
