@@ -9,3 +9,24 @@
     --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
     --very-ligth-gray: hsl(0, 0%, 95%); /* bg-head-buttons */
 }
+body {
+    background-color: var(--very-ligth-gray);
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+#container-cards {
+    display: flex;
+    flex-direction: row;
+}
+.card-sedan {
+    background-color: var(--bright-orange);
+}
+.card-suv {
+    background-color: var(--Dark-cyan);
+}
+.card-luxury {
+    background-color: var(--Very-dark-cyan);
+}
