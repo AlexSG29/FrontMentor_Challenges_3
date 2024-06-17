@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "tailwindcss": "^3.4.4"
-  },
-  "scripts": {
-    "dev": "npx tailwindcss -i ./columns-cards-componets/src/input.css -o ./columns-cards-componets/src/output.css --watch"
-  }
-}
