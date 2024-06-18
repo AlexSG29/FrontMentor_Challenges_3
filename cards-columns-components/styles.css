@@ -11,7 +11,6 @@
 }
 body {
     background-color: var(--very-ligth-gray);
-    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,13 +19,105 @@ body {
 #container-cards {
     display: flex;
     flex-direction: row;
+    min-height: 25rem;
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    flex-wrap: wrap;
 }
-.card-sedan {
+.titles-card{
+    color:var(--very-ligth-gray);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;   
+}
+.p-card {
+    color: var(--transparent-white);
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+}
+#card-sedan {
     background-color: var(--bright-orange);
 }
-.card-suv {
+#card-suv {
     background-color: var(--Dark-cyan);
 }
-.card-luxury {
+#card-luxury {
+    background-color: var(--Very-dark-cyan);
+}
+.cards {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width:12rem;
+    padding: 2.2rem;
+}
+.sect-top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sect-bottom {
+    display: flex;
+    justify-content: start;
+    align-items:end;
+}
+.button-more {
+    border-radius: 10rem;
+    width: 65%;
+    height: 2.6rem;
+    min-width: 6rem;
+    background-color: var(--very-ligth-gray);
+    border: 0;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 0.8rem;
+}
+#button-sedan {
+    color: var(--bright-orange);
+}
+#button-suv {
+    color: var(--Dark-cyan);
+}
+#button-luxury {
+    color: var(--Very-dark-cyan);
+}
+.icons {
+    width: 3rem;
+    height: auto;
+}
+
+@media (max-width: 630px) {
+    #container-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards {
+        min-height: 20rem;
+    }
+
+}
+#button-sedan:hover {
+    cursor: pointer;
+    border: 2px solid var(--very-ligth-gray);
+    color: var(--very-ligth-gray);
+    background-color: var(--bright-orange);
+}
+#button-suv:hover {
+    cursor: pointer;
+    border: 2px solid var(--very-ligth-gray);
+    color: var(--very-ligth-gray);
+    background-color: var(--Dark-cyan);
+}
+#button-luxury:hover {
+    cursor: pointer;
+    border: 2px solid var(--very-ligth-gray);
+    color: var(--very-ligth-gray);
     background-color: var(--Very-dark-cyan);
 }
