@@ -45,49 +45,74 @@ Note for text colors:
     margin: 0;
 }
 body {
+    background-color: var(--ligth-grayish-blue);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
+    font-family: "Barlow Semi Condensed", sans-serif, "Helvetica Neue";
+    font-style: normal;
+    font-size: 0.82rem;
 }
 main {
-    /* width: 50rem; */
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
     gap: 1rem;
     margin: 2rem;
     grid-template-areas:
     "card1 card1 card2 card3"
     "card4 card5 card5 card3";
+    background-color: chartreuse;
+    min-height: 70dvh;
+    width: 80%;
+}
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+}
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+.profiles-pics {
+    border-radius: 100%;
+    width: 2rem;
+    height: auto;
 }
 #card-daniel {
-    background-color: gray;
-    grid-column: 1 / 3; /* Desde columna 1 hasta columna 2 */
-    grid-row: 1; /* Fila 1 */
+    background-color: var(--moderate-violet);
     grid-area: card1;
+    h1 {
+        color: var(--white);
+        margin: 1rem 0;
+    }
+    p {
+        color: var(--ligth-gray);
+        font-weight: 200;
+        margin: 0.4rem 0
+    }
 }
 #card-jonathan {
-    background-color: aqua;
-    grid-column: 3; /* Columna 3 */
-    grid-row: 1; /* Fila 1 */
+    background-color: var(--very-darck-grayish);
     grid-area: card2;
 }
-#card-jeanette {
-    background-color: yellow;
-    grid-column: 4; /* Columna 4 */
-    grid-row: 1 / 3; /* Desde fila 1 hasta fila 2 */
+#card-kira {
+    background-color: var(--white);
     grid-area: card3;
 }
-#card-patrick {
-    background-color: blueviolet;
-    grid-column: 1; /* Columna 1 */
-    grid-row: 2; /* Fila 2 */
+#card-jeanette {
+    background-color: var(--white);
     grid-area: card4;
 }
-#card-kira {
-    background-color: chocolate;
-    grid-column: 2 / 4; /* Desde columna 2 hasta columna 3 */
-    grid-row: 2; /* Fila 2 */
+#card-patrick {
+    background-color: var(--very-darck-blackish-blue);
     grid-area: card5;
 }
+
